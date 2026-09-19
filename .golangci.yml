@@ -36,11 +36,6 @@ linters:
     # govet's fieldalignment check is deliberately left off: `aligo check`
     # already reports struct packing, with better output and one place to
     # silence it.
-    revive:
-      rules:
-        - name: exported
-          arguments:
-            - disableStutteringCheck # Package template, type template.Greeter.
 
   exclusions:
     generated: lax
@@ -52,10 +47,6 @@ linters:
           - errcheck
           - gosec
           - unparam
-      # Examples print to stdout on purpose.
-      - path: example_test\.go$
-        linters:
-          - forbidigo
 
 formatters:
   enable:

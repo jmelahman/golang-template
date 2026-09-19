@@ -20,7 +20,9 @@ profile.cov
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-# Go workspace file
+# Go workspace files. A multi-module repo should commit these instead: go.work
+# is what scripts/modules.sh uses to decide which modules are in play,
+# and CI keys its build cache on go.work.sum.
 go.work
 go.work.sum
 
@@ -30,3 +32,10 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# GoReleaser output
+dist/
+
+# Local planning artifacts
+plans/
+.claude/settings.local.json

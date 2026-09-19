@@ -62,7 +62,7 @@ jobs:
         with:
           go-version: ${{ env.GO_VERSION }}
           cache: false
-      - uses: j178/prek-action@91fd7d7cf70ae1dee9f4f44e7dfa5d1073fe6623 # ratchet:j178/prek-action@v1.0.11
+      - uses: j178/prek-action@4e14d07f9231acabce116ccfca13b13dd9755ece # ratchet:j178/prek-action@v3.0.0
         env:
           # Lets the zizmor hook run its online audits instead of falling
           # back to offline mode.
